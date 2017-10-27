@@ -16,16 +16,21 @@ function fillTable2(rows) {
 
 
     for (var i = 0; i < rows.length; i++) {
-        for (var j = 0; j < rows[i].matches.length; j++) {
-            if (code === matches.team1.code || code === matches.team2.code); {
+        var row = rows[i];
+
+        for (var j = 0; j < row.matches.length; j++) {
+            var match = row.matches[j];
+
+
+            if (code === match.team1.code || code === match.team2.code) {
                 var tr = "<tr>";
 
                 tr += "<td>" + (i + 1) + "</td>";
-                tr += "<td>" + rows[i].matches.date + "</td>";
-                tr += "<td>" + rows[i].matches.team1.name + "</td>";
-                tr += "<td>" + rows[i].matches.team2.name + "</td>";
-                tr += "<td>" + rows[i].matches.score1 + "</td>";
-                tr += "<td>" + rows[i].matches.score2 + "</td>";
+                tr += "<td>" + match.date + "</td>";
+                tr += "<td>" + match.team1.name + "</td>";
+                tr += "<td>" + match.team2.name + "</td>";
+                tr += "<td>" + match.score1 + "</td>";
+                tr += "<td>" + match.score2 + "</td>";
 
                 tr += "</tr>";
                 content += tr;
