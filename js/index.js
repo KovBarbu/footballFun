@@ -14,7 +14,6 @@ function fillTable(rows) {
     for (var i = 0; i < rows.length; i++) {
         var tr = "<tr>";
         tr += "<td>" + (i + 1) + "</td>";
-        tr += "<td>" + rows[i].key + "</td>";
         tr += "<td>" + rows[i].name + "</td>";
         tr += "<td>" + rows[i].code + "</td>";
         tr += '<td><a class="btn btn-primary" href="match.html?code=' + rows[i].code + '">match</a></td>';
@@ -25,14 +24,18 @@ function fillTable(rows) {
     table.querySelector("tbody").innerHTML = content;
 }
 
-document.getElementById("sort-key").addEventListener("click", function () {
+function nevsor() {
+
     tableData.sort(function (a, b) {
-        if (!a.code) {
+        if (!a.name) {
             return -1;
-        } else if (!b.code) {
+        } else if (!b.name) {
             return 1;
         }
-        return a.code.localeCompare(b.code);
+        return a.name.localeCompare(b.name);
     });
+
+
     fillTable(tableData);
-});
+}
+document.getElementById("sort-name").addEventListener("click", nevsor);
