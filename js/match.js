@@ -88,5 +88,29 @@ Köszi!
 
 Ha bármim kérdés van ,hívj a 30-asomon, a FB csoportban megtalálod :)
 
+*/
+
+/*
+Zsófi:
+Kérlek szépen ,hogy nézd meg hogy mit sikerült elbarmolnom. :)
+A meccses gombos Barbis csodára tettem logokat fel. Egyrészt szeretném kérni, hogy minden oldalon legyen egy nagyon halvány háttérkép
+valami marhanagy premiere league oroszlánnal, biztos lehet ilyet lopni netről.  Én egy szimpit találtam, esetleg azt megpróbálhatnád 
+berakni, a hatter-pl.jpg a neve a jpegs mappában. 
+
+Ezen kívül a  főoldalon az angol bajnokság fejrész szerintem csúnya. A csík oké, de mindneképp körbevágott logot kell majd keresni  
+holnap hozzá, meg a szöveg sem tetszik, azt holnap átírnám. 
+*/
+
+
+/*
+Holnapra még új features ötleteim, mondjátok majd el, hogy nektek bejön -e:
+1. a Főoldalon szeretnék nem csak csapatokat , hanem mondjuk 10 fordulóhoz random eredményeket (meccs, győzelem ,döntetlen ,vereség, pont)
+    A pont nyilván az előtte lévő 3 adatból generálódna
+2. Szeretnék pont szerinti összesítés gombot is csinálni, erről egyelőre még nincs ötletem, de remélem hamarosan lesz.
+
+3.: Valami háttérkép (amit fenn írtam)
+4: Minden csapatra működjön a meccsei gomb, a nullosokra is
+
+NAgyjából ennyi, ha bármit kihagytam, akkor nyugodtan szóljatok!
 
 */
