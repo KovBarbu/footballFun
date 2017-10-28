@@ -1,12 +1,18 @@
 var tableData = [];
 
 var code = location.href.split("=")[1];
+var csapat = location.href.split("=")[3];
+if (csapat == "Brighton%20&%20Hove%20Albion") {
+    csapat = "Brighton";
+}
+csapat = csapat.replace("%20", " ");
 
 getJson(
     "https://raw.githubusercontent.com/opendatajson/football.json/master/2017-18/en.1.json",
     function (data) {
         tableData = data.rounds;
         fillTable2(tableData);
+        csapatlogok(csapat);
     }
 );
 
@@ -61,3 +67,26 @@ function fillTable2(rows) {
 
 
 }
+
+function csapatlogok(csapat) {
+    // ide majd kellene egy kis logo CSS
+    var fejresz = "<h2><img src='jpegs/" + csapat + ".jpg' class='header-logo-fejresz' alt='" + csapat + "'-logo' width=80>";
+    fejresz += " A(z) " + csapat + " mérkőzései sorrendben! </h2>";
+    document.getElementById("elocucc").innerHTML = fejresz;
+
+}
+
+
+/*
+Barbi!! 
+Kérlek szépen próbáld meg nekem megcsinálni azt, hogy ha a csapat kódja = null, 
+akkor név szerint keressen a meccsek között és azokat írja ki a match.js a meccsek oldalán! O:)
+
+Ezt találtam ki még, mert ugye ez így hiba, hogy ott nem ír ki semmit :/
+
+Köszi!
+
+Ha bármim kérdés van ,hívj a 30-asomon, a FB csoportban megtalálod :)
+
+
+*/

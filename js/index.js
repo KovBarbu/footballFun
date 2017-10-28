@@ -16,7 +16,7 @@ function fillTable(rows) {
         tr += "<td>" + (i + 1) + "</td>";
         tr += "<td>" + rows[i].name + "</td>";
         tr += "<td>" + rows[i].code + "</td>";
-        tr += '<td><a class="btn btn-primary" href="match.html?code=' + rows[i].code + '">match</a></td>';
+        tr += '<td><a class="btn btn-primary" href="match.html?code=' + rows[i].code + '=?csapat=' + rows[i].name + '">match</a></td>';
         tr += "</tr>";
         content += tr;
     }
