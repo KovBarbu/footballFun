@@ -1,4 +1,3 @@
-var code = location.href.split("=")[1];
 getJson(
     "https://raw.githubusercontent.com/opendatajson/football.json/master/2017-18/en.1.json",
     function (tableData) {
@@ -31,21 +30,17 @@ function fillTable2(rows) {
 
         for (var j = 0; j < row.matches.length; j++) {
             var match = row.matches[j];
+            var tr = "<tr>";
 
+            tr += "<td>" + (i + 1) + "</td>";
+            tr += "<td>" + match.date + "</td>";
+            tr += "<td>" + match.team1.name + "</td>";
+            tr += "<td>" + match.team2.name + "</td>";
+            tr += "<td>" + match.score1 + "</td>";
+            tr += "<td>" + match.score2 + "</td>";
 
-            if (code === match.team1.code || code === match.team2.code) {
-                var tr = "<tr>";
-
-                tr += "<td>" + (i + 1) + "</td>";
-                tr += "<td>" + match.date + "</td>";
-                tr += "<td>" + match.team1.name + "</td>";
-                tr += "<td>" + match.team2.name + "</td>";
-                tr += "<td>" + match.score1 + "</td>";
-                tr += "<td>" + match.score2 + "</td>";
-
-                tr += "</tr>";
-                content += tr;
-            }
+            tr += "</tr>";
+            content += tr;
         }
         table.querySelector("tbody").innerHTML = content;
 
