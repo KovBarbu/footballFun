@@ -12,18 +12,40 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 
+
 <body>
-
-    <div id="tablediv" class="row">
-        <div class="table-responsive">
-            <table id="tabla" class="table table-striped">
-                <tbody></tbody>
-
-            </table>
+    <main role="main">
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <h1>A kiválasztott csapat mérkőzései:</h1>
         </div>
-    </div>
-    <script src="js/main.js"></script>
-    <script src="js/kereszttabla.js"></script>
+
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table-hover table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Dátum</th>
+                            <th>Hazai</th>
+                            <th>Vengég</th>
+                            <th colspan=2>Eredmény</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+    <script src="js\main.js"></script>
+    <script src="js\match.js"></script>
+    <!-- Site footer -->
+    <footer class="footer">
+        <p>Barbi - Zsófi - Gábor Company &copy;</p>
+    </footer>
 </body>
 
 </html>

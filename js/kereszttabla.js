@@ -6,42 +6,72 @@ getJson(
     }
 );
 
-function fillTable(rows) {
+/*function fillTable(rows) {
 
     rows = rows.rounds;
     var table = document.getElementById("tabla");
 
     for (var i = 0; i < rows.length; i++) {
-        a = "<table border=1 id = \"" + (i + 1) + "fordulo\" class = \"nagyonclass\"> <tr> <td colspan = 4> " + (i + 1) + ".forduló </td></tr> ";
-        document.querySelector("body").innerHTML += a;
-        var meccsek = rows[i].matches;
-        console.log(meccsek);
+        var ford = i + 1;
+        a = "<table border=1 id =" + ford + " class = \"nagyonclass\"> <tr> <td colspan = 4> " + ford + ".forduló </td></tr> ";
+        document.getElementById("tablediv").innerHTML += a;
+        table = document.getElementById(ford);
+
+    }
+
+}*/
+
+function fillTable2(rows) {
+    var table = document.querySelector("table");
+    var content = "";
+
+
+    for (var i = 0; i < rows.length; i++) {
+        var row = rows[i];
+
+        for (var j = 0; j < row.matches.length; j++) {
+            var match = row.matches[j];
+
+
+            if (code === match.team1.code || code === match.team2.code) {
+                var tr = "<tr>";
+
+                tr += "<td>" + (i + 1) + "</td>";
+                tr += "<td>" + match.date + "</td>";
+                tr += "<td>" + match.team1.name + "</td>";
+                tr += "<td>" + match.team2.name + "</td>";
+                tr += "<td>" + match.score1 + "</td>";
+                tr += "<td>" + match.score2 + "</td>";
+
+                tr += "</tr>";
+                content += tr;
+            }
+        }
+        table.querySelector("tbody").innerHTML = content;
+
+    }
+}
+
+
+/*var meccsek = rows[i].matches;
         var content = "";
         for (var j = 0; j < 2; j++) {
             var tr = "<tr>";
-            tr += "<td>" + (j + 1) + "</td>";
-            tr += "<td>" + "1. csapat" + "</td>";
+            tr += "<td>" + ford + "</td></tr><tr>";
+            tr += "<td colspan=2>" + "1. csapat" + "</td>";
             tr += "<td>-</td>";
-            tr += "<td>" + "2. csapat" + "</td>";
+            tr += "<td colspan=2>" + "2. csapat" + "</td>";
             tr += "</tr>";
             content += tr;
-            console.log(tr);
-            /* 
-                        var tr = "<tr>";
-                        tr += "<td>" + (j + 1) + "</td>";
-                        tr += "<td>" + meccsek[j].team1[j].name + "</td>";
-                        tr += "<td>-</td>";
-                        tr += "<td>" + meccsek[j].team2[j].name + "</td>";
-                        tr += "</tr>";
-                        content += tr;*/
+            console.log(table);
             document.querySelector("body").innerHTML += content;
         }
 
         document.querySelector("body").innerHTML += "</table><br>";
     }
 
-    // 
-}
+
+}*/
 /*
 function fillTable(rows) {
     // 
