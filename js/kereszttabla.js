@@ -18,7 +18,7 @@ function fillTable2(rows) {
     for (var i = 0; i < rows.length; i++) {
         var row = rows[i];
         var tr = "<tr>";
-        tr += "<td colspan=6>" + row.name + "</td>";
+        tr += "<td colspan=7 class='matchday'>" + row.name + "</td>";
         tr += "</tr>";
         tr += "<tr>";
         tr += "<th>Forduló</th>";
