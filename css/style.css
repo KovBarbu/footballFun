@@ -9,6 +9,12 @@ body {
     padding-top: 3.5rem;
 }
 
+.matchday {
+    background-color: darkblue;
+    font-style: bold;
+    color: #fff;
+}
+
 
 /*.hatterkep {
     background-image: url("hatter-pl2.jpg");
