@@ -110,25 +110,3 @@ function csapatlogok(csapat) {
     document.getElementById("elocucc").innerHTML = fejresz;
 
 }
-
-
-
-/*
-Zsófi:
-Kérlek szépen ,hogy nézd meg hogy mit sikerült elbarmolnom. :)
-A meccses gombos Barbis csodára tettem logokat fel. Egyrészt szeretném kérni, hogy minden oldalon legyen egy nagyon halvány háttérkép
-valami marhanagy premiere league oroszlánnal, biztos lehet ilyet lopni netről.  
-Én egy szimpit találtam, esetleg azt megpróbálhatnád 
-berakni, a hatter-pl.jpg a neve a jpegs mappában. 
-
-2.:  A meccsek fülön pár csapat logoja ronda , nem körbevágott... jegyezzük meg, hogy melyik olyan, és azt ne mutassuk meg, sok helyen jó :)
-
-3.: A kereszttabla.js -ben van egy    tr += "<td colspan=7 class='matchday'>" + row.name + "</td>"; rész, erre meg kéne írni egy 
-olyan CSS-t, ami kiemeli mondjuk félkövérre, mindenhol kicsit elütő színe lesz a többitől, valami kiemelés, mondjuk kék, vagy ilyesmi.
-Nekem legjobban egy jó erős kék tetszene, fehér, félkövér betűszínnel,de az ízlésedre bízom :)
-
-4.: Esetleg legyen ugyanilyen az index.html fejléce is, meg a match.js-ben a fejléc is, akkor legyünk már egységesek. MIt szólsz?
-
-NAgyjából ennyi, ha bármit kihagytam, akkor nyugodtan szóljatok!
-
-*/
