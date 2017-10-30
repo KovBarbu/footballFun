@@ -11,8 +11,13 @@ body {
 
 .matchday {
     background-color: darkblue;
-    font-style: bold;
+    font-weight: bold;
     color: #fff;
+}
+
+.custom-link-container a,
+.custom-link-container a:visited {
+    color: black;
 }
 
 
